@@ -29,8 +29,9 @@
       todos = todos.map(t => (t.id === id ? {...t, done: !t.done} : t));
     }
   </script>
-  
-  <div>
+    <main > 
+      <div class="main">
+  <div >
       <h1>
          TODO-List
       </h1>
@@ -39,7 +40,7 @@
    
     <form class="from" on:submit|preventDefault={addTodo}>
       <input
-        size="30"
+        size="50"
         placeholder="Add the task "
         bind:value={todoText} />
     
@@ -54,12 +55,22 @@
       {/each}
     </ul>
   </div>
-
-      
+</div>
+   </main>
   <style>
+
+   .main{
+       background-color: rgb(131, 146, 221); 
+      height: 100vh; 
+      justify-content: center;
+      align-items: center;
+      color: black;
+      font-family: Arial, sans-serif;
+     }
+
     button {
 
-      margin-left: 1rem;
+      margin-left: 0 rem;
     }
       
       h1 {
@@ -76,6 +87,7 @@
     }
 	form{
 		text-align: center;
+    
 	}
     
    
