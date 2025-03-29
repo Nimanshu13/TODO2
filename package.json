@@ -9,7 +9,7 @@
 	"type": "module",
 	
 	"scripts": {
-	 "build": "[my-framework] build --output public",
+	 "build": "vite build" ,
 		
 	"start": "vite",
 	
@@ -18,7 +18,7 @@
 	"predeploy":"npm run build",
 	"deploy":"gh-pages -d build",
 		
-	"build": "vite build",
+	
 	
 		
 	
